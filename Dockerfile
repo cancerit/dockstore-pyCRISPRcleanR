@@ -1,9 +1,9 @@
 FROM  ubuntu:16.04
-MAINTAINER  sb43@sanger.ac.uk
+MAINTAINER  cgphelp@sanger.ac.uk
 
-LABEL uk.ac.sanger.cgp="Cancer Genome Project, Wellcome Trust Sanger Institute" \
+LABEL uk.ac.sanger.cgp="Cancer Genome Project, Wellcomei Sanger Institute" \
       version="1.0.0" \
-      description="Tool to perform crisprCas9 data cleaning and qc"
+      description="Tool to perform crisprcleaner analysis"
 
 USER root
 
@@ -33,9 +33,6 @@ RUN apt-get update && \
 
 RUN R -e 'source("http://bioconductor.org/biocLite.R"); biocLite("DNAcopy", ask=FALSE, lib="'"${R_LIBS_USER}"'")' 
 
-# install python modules from requirements 
-COPY requirements.txt build/
-RUN pip3 --no-cache-dir install -r build/requirements.txt
 # install crisprcleanr
 RUN pip3 --no-cache-dir install https://github.com/cancerit/pyCRISPRcleanR/releases/download/1.1.1/pyCRISPRcleanR-1.1.1-py3-none-any.whl
 ### security upgrades and cleanup
