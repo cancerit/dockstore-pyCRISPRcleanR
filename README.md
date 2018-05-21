@@ -11,18 +11,21 @@ Dockersised [pyCRISPRcleanR] for Dockstore
 This project wraps pyCRISPRcleanR into a Dockstore tool.
 
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
- - [Required inputs are](#required-inputs-are)
+ - [Required inputs](#required-inputs)
  - [Release process](#release-process)
  - [LICENSE](#LICENSE)
 
-Required inputs are:
+Required inputs:
 
-1. ```gRNA Counts``` file: tab separated file containing following fields
+1. ```gRNA Counts``` file: tab separated file containing following fields:
+
    sgRNA  gene  <control_count 1...N> <sample_count 1..N>
-2. ```sgRNA library``` file format with following mandatory columns
+
+2. ```sgRNA library``` file format with following mandatory columns:
+
    sgRNA  gene  chr  start  end 
 
-For additional optional inputs please refer pyCRISPRcleanR --help 
+For additional optional input parameters please run pyCRISPRcleanR --help 
 
 ## Release process
 
