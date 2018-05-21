@@ -12,13 +12,19 @@ doc: |
     A Docker container for pyCRISPRCleanR command. See the [pyCRISPRcleanR](https://github.com/cancerit/pyCRISPRcleanR) website for more information.
 
 dct:creator:
-  "@id": "sb43@sanger.ac.uk"
+  "@id": " https://orcid.org/0000-0002-7638-2899"
   foaf:name: Shriram Bhosle
   foaf:mbox: "mailto:sb43@sanger.ac.uk"
 
 requirements:
   - class: DockerRequirement
     dockerPull: "quay.io/wtsicgp/dockstore-pycrisprcleanr:latest"
+
+hints:
+  - class: ResourceRequirement
+    coresMin: 1
+    ramMin: 2048 #"the process requires at least 2G of RAM
+    outdirMin: 2048
 
 inputs:
   countfile:

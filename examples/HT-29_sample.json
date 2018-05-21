@@ -1,12 +1,12 @@
 {
 "countfile": {
   "class": "File",
-  "path": "../tests/data/HT-29_counts_chr22.tsv.gz"
+  "path": "../examples/data/HT-29_counts_chr22.tsv.gz"
 },
 
 "libfile":{
   "class": "File",
-  "path": "../tests/data/KY_libv1.0_chr22.tsv.gz"
+  "path": "../examples/data/KY_libv1.0_chr22.tsv.gz"
 },
 "expname": "myexperiemnt",
 "minreads": 30,
