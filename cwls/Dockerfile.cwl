@@ -18,7 +18,7 @@ dct:creator:
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/wtsicgp/dockstore-pycrisprcleanr:latest"
+    dockerPull: "quay.io/wtsicgp/dockstore-pycrisprcleanr:1.0.0"
 
 hints:
   - class: ResourceRequirement
