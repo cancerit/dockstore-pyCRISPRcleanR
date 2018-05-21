@@ -1,43 +1,45 @@
+
+# dockstore-pyCRISPRcleanR
+
 Dockersised [pyCRISPRcleanR] for Dockstore
 
 [![Docker Repository on Quay]("Quay")]
 
-# dockstore-pyCRISPRcleanR
 | Master                                              | Develop                                               |
 | --------------------------------------------------- | ----------------------------------------------------- |
 | [![Master Badge][travis-master-badge]][travis-repo] | [![Develop Badge][travis-develop-badge]][travis-repo] |
 
-
 This project wraps pyCRISPRcleanR into a Dockstore tool.
 
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
- - [Required inputs](#required-inputs)
- - [Release process](#release-process)
- - [LICENSE](#LICENSE)
+
+- [Required inputs](#required-inputs)
+- [Release process](#release-process)
+- [LICENSE](#LICENSE)
 
 Required inputs:
 
 1. ```gRNA Counts``` file: tab separated file containing following fields:
 
-   sgRNA  gene  <control_count 1...N> <sample_count 1..N>
+sgRNA  gene  <control_count 1...N> <sample_count 1..N>
 
-2. ```sgRNA library``` file format with following mandatory columns:
+1. ```sgRNA library``` file format with following mandatory columns:
 
-   sgRNA  gene  chr  start  end 
+sgRNA  gene  chr  start  end
 
-For additional optional input parameters please run pyCRISPRcleanR --help 
+For additional optional input parameters please run pyCRISPRcleanR --help
 
 ## Release process
 
 This project is maintained using HubFlow.
 
 1. Make appropriate changes
-2. Bump version in `Dockerfile` and `Dockstore.cwl`
-3. Push changes
-4. Check state on Travis
-5. Generate the release (add notes to GitHub)
-6. Confirm that image has been built on [quay.io]
-7. Update the [dockstore] entry, see [dockstore-docs]
+1. Bump version in `Dockerfile` and `Dockstore.cwl`
+1. Push changes
+1. Check state on Travis
+1. Generate the release (add notes to GitHub)
+1. Confirm that image has been built on [quay.io]
+1. Update the [dockstore] entry, see [dockstore-docs]
 
 ## LICENCE
 
