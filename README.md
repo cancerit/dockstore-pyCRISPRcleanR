@@ -19,11 +19,11 @@ This project wraps pyCRISPRcleanR into a Dockstore tool.
 
 Required inputs:
 
-1. ```gRNA Counts``` file: tab separated file containing following fields:
+```gRNA Counts``` file: tab separated file containing following fields:
 
 sgRNA  gene  <control_count 1...N> <sample_count 1..N>
 
-1. ```sgRNA library``` file format with following mandatory columns:
+```sgRNA library``` file format with following mandatory columns:
 
 sgRNA  gene  chr  start  end
 
