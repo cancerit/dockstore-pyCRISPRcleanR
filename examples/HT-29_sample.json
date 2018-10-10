@@ -8,14 +8,15 @@
   "class": "File",
   "path": "../examples/data/KY_libv1.0_chr22.tsv.gz"
 },
-"expname": "myexperiemnt",
 "minreads": 30,
 "mingenes": 3,
 "ignored_genes": [],
 "ncontrols": 1,
-"sample": "mysample",
 "num_processors": 1,
 "crispr_cleanr": true,
-"plot_data": true,
+"gene_signatures": "../examples/data/signatures",
+"run_mageck": true,
+"run_bagel": true,
+"numiter": 10,
 "outdir":"analysis_results"
 }
