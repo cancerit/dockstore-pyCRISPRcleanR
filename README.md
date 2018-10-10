@@ -3,7 +3,9 @@
 
 Dockersised [pyCRISPRcleanR] for Dockstore
 
-[![Docker Repository on Quay]("Quay")]
+| Quay.io status                                     |
+| ---------------------------------------------------|
+| [![Docker Repository on Quay][quay-badge]][quay-repo] |
 
 | Master                                              | Develop                                               |
 | --------------------------------------------------- | ----------------------------------------------------- |
@@ -69,10 +71,9 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
  [travis-master-badge]: https://travis-ci.org/cancerit/dockstore-pyCRISPRcleanR.svg?branch=master
  [travis-develop-badge]: https://travis-ci.org/cancerit/dockstore-pyCRISPRcleanR.svg?branch=develop
  [travis-repo]: https://travis-ci.org/cancerit/dockstore-pyCRISPRcleanR
+ [quay-badge]: https://quay.io/repository/wtsicgp/dockstore-pycrisprcleanr/status
+ [quay-repo]: https://quay.io/repository/wtsicgp/dockstore-pycrisprcleanr
  [pyCRISPRcleanR-releases]: https://github.com/cancerit/dockstore-pyCRISPRcleanR/releases
- [Quay]: https://quay.io/repository/wtsicgp/dockstore-pycrisprcleanr/status
  [quay.io]: https://quay.io/repository/wtsicgp/dockstore-pycrisprcleanr?tab=builds
- [Quay]: https://quay.io/repository/wtsicgp/dockstore-pycrisprcleanr/status
  [dockstore]: https://dockstore.org/containers/quay.io/wtsicgp/dockstore-pycrisprcleanr
  [dockstore-docs]: https://dockstore.org/docs/getting-started-with-dockstore
-

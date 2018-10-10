@@ -43,22 +43,20 @@ inputs:
       prefix: -l
       position: 2
       separate: true
-
-  expname:
-    type: string?
-    default: 'myexperiment'
-    doc: "analysis experiment name"
+ 
+  run_mageck:
+    type: boolean
+    doc: "flag to run MAGeCK"
     inputBinding:
-      prefix: -e
+      prefix: -mk
       position: 3
       separate: true
-
-  sample:
-    type: string?
-    default: 'mysample'
-    doc: "sample name in counts file"
+  
+  run_bagel:
+    type: boolean
+    doc: "flag to run BAGEL"
     inputBinding:
-      prefix: -s
+      prefix: -bl
       position: 4
       separate: true
 
@@ -116,21 +114,37 @@ inputs:
 
   ignored_genes:
     type: string[]
+    doc: "space separated list of ignored genes"
     inputBinding:
       prefix: -ig
       separate: true
       shellQuote: true
-    doc: "space separated list of ignored genes"
-    inputBinding:
       position: 11
 
   outdir:
-   type: string
+   type: Directory
    doc: "path to output folder"
    inputBinding:
       prefix: -o
       separate: true
       position: 12
+  
+  gene_signatures:
+    type: Directory
+    doc: "Directory path containing .txt files for signature genes"
+    inputBinding:
+      prefix: -gs
+      separate: true
+      position: 13
+
+  numiter:
+    type: int
+    default: 1
+    doc: "Number of bootstrap iterations for BAGEL (default 1000)"
+    inputBinding:
+      prefix: -N
+      position: 14
+      separate: true
 
 outputs:
   output_data:
@@ -143,4 +157,4 @@ outputs:
     outputBinding:
       glob: "*.log"
 
-baseCommand: ["pyCRISPRCleanR"]
+baseCommand: ["pyCRISPRcleanR"]
