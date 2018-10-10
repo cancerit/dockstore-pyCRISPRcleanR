@@ -3,7 +3,6 @@
 
 Dockersised [pyCRISPRcleanR] for Dockstore
 
-
 | Quay.io status                                     |
 | ---------------------------------------------------|
 | [![Docker Repository on Quay][quay-badge]][quay-repo] |
