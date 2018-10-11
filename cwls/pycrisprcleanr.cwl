@@ -19,7 +19,7 @@ label: "Dockerised pyCRISPcleanR for CrisprCas9 data analysis"
 cwlVersion: v1.0
 
 doc: |
-    ![build_status](https://quay.io/repository/wtsicgp/dockstore-pycrisprcleanr)
+    ![build_status](https://quay.io/repository/wtsicgp/dockstore-pycrisprcleanr/status)
     A Docker container for pyCRISPRCleanR command. See the [pyCRISPRcleanR](https://github.com/cancerit/pyCRISPRcleanR) website for more information.
 
 dct:creator:
