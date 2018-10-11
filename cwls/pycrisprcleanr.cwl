@@ -1,5 +1,11 @@
 #!/usr/bin/env cwl-runner
 
+$namespaces:
+  s: http://schema.org/
+
+$schemas:
+- http://schema.org/docs/schema_org_rdfa.html
+
 class: CommandLineTool
 
 id: "pyCRISPcleanR"
@@ -7,18 +13,15 @@ id: "pyCRISPcleanR"
 label: "Dockerised pyCRISPcleanR for CrisprCas9 data analysis"
 
 cwlVersion: v1.0
+
 doc: |
     ![build_status](https://quay.io/repository/wtsicgp/dockstore-pycrisprcleanr)
     A Docker container for pyCRISPRCleanR command. See the [pyCRISPRcleanR](https://github.com/cancerit/pyCRISPRcleanR) website for more information.
 
-dct:creator:
-  "@id": " https://orcid.org/0000-0002-7638-2899"
-  foaf:name: Shriram Bhosle
-  foaf:mbox: "mailto:sb43@sanger.ac.uk"
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/wtsicgp/dockstore-pycrisprcleanr:1.0.0"
+    dockerPull: "quay.io/wtsicgp/dockstore-pycrisprcleanr:2.0.2"
 
 hints:
   - class: ResourceRequirement
@@ -59,20 +62,21 @@ inputs:
       prefix: -bl
       position: 4
       separate: true
+  
+  numiter:
+    type: int
+    default: 1
+    doc: "Number of bootstrap iterations for BAGEL (default 1000)"
+    inputBinding:
+      prefix: -N
+      position: 5
+      separate: true
 
   crispr_cleanr:
     type: boolean
     doc: "flag to run CRISPRcleanR"
     inputBinding:
       prefix: -cc
-      position: 5
-      separate: true
-
-  plot_data:
-    type: boolean
-    doc: "Generate pdf and interactive plotly images"
-    inputBinding:
-      prefix: -pl
       position: 6
       separate: true
 
@@ -122,7 +126,7 @@ inputs:
       position: 11
 
   outdir:
-   type: Directory
+   type: string 
    doc: "path to output folder"
    inputBinding:
       prefix: -o
@@ -130,21 +134,12 @@ inputs:
       position: 12
   
   gene_signatures:
-    type: Directory
+    type: Directory 
     doc: "Directory path containing .txt files for signature genes"
     inputBinding:
       prefix: -gs
       separate: true
       position: 13
-
-  numiter:
-    type: int
-    default: 1
-    doc: "Number of bootstrap iterations for BAGEL (default 1000)"
-    inputBinding:
-      prefix: -N
-      position: 14
-      separate: true
 
 outputs:
   output_data:
@@ -158,3 +153,12 @@ outputs:
       glob: "*.log"
 
 baseCommand: ["pyCRISPRcleanR"]
+
+s:codeRepository: https://github.com/cancerit/dockstore-pyCRISPRcleanR 
+s:license: https://spdx.org/licenses/AGPL-3.0-only
+s:citation: doi-10.1186/s12859-016-1015-8
+s:author:
+  - class: s:Person
+    s:identifier: https://orcid.org/0000-0002-7638-2899 
+    s:email: mailto:cgphelp@sanger.ac.uk
+    s:name: Shriram Bhosle
