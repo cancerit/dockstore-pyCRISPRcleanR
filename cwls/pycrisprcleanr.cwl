@@ -1,10 +1,14 @@
 #!/usr/bin/env cwl-runner
 
 $namespaces:
+  dct: http://purl.org/dc/terms/
+  foaf: http://xmlns.com/foaf/0.1/
   s: http://schema.org/
 
 $schemas:
 - http://schema.org/docs/schema_org_rdfa.html
+- http://dublincore.org/2012/06/14/dcterms.rdf
+- http://xmlns.com/foaf/spec/20140114.rdf
 
 class: CommandLineTool
 
@@ -18,6 +22,10 @@ doc: |
     ![build_status](https://quay.io/repository/wtsicgp/dockstore-pycrisprcleanr)
     A Docker container for pyCRISPRCleanR command. See the [pyCRISPRcleanR](https://github.com/cancerit/pyCRISPRcleanR) website for more information.
 
+dct:creator:
+  "@id": "https://orcid.org/0000-0002-7638-2899" 
+  foaf:name: Shriram Bhosle
+  foaf:mbox: "mailto: sb43@sanger.ac.uk"
 
 requirements:
   - class: DockerRequirement
