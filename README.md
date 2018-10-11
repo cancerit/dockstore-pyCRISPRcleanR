@@ -36,6 +36,7 @@ For additional optional input parameters please run pyCRISPRcleanR --help
 This project is maintained using HubFlow.
 
 1. Make appropriate changes
+1. Test cwl workflow `cwl-runner pycrisprcleanr.cwl ../examples/HT-29_sample.json`
 1. Bump version in `Dockerfile` and `Dockstore.cwl`
 1. Push changes
 1. Check state on Travis
