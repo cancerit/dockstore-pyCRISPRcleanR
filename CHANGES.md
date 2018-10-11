@@ -1,5 +1,8 @@
 # CHANGES
 
+## 2.0.2
+* Fixed cwl workflow
+* Added schema and citation information
 ## 2.0.1
  * Fixed docker file
 ## 2.0.0

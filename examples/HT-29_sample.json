@@ -8,13 +8,18 @@
   "class": "File",
   "path": "../examples/data/KY_libv1.0_chr22.tsv.gz"
 },
+
+"gene_signatures":{
+  "class": "Directory", 
+  "path": "../examples/data/signatures/"
+},
+
 "minreads": 30,
 "mingenes": 3,
 "ignored_genes": [],
 "ncontrols": 1,
 "num_processors": 1,
 "crispr_cleanr": true,
-"gene_signatures": "../examples/data/signatures",
 "run_mageck": true,
 "run_bagel": true,
 "numiter": 10,
