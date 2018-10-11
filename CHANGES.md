@@ -1,5 +1,7 @@
 # CHANGES
 
+## 2.0.3
+* Added description field required now to add to dockstore repository
 ## 2.0.2
 * Fixed cwl workflow
 * Added schema and citation information
