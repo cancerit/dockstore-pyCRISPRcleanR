@@ -1,5 +1,7 @@
 # CHANGES
 
+## 2.0.5
+* Test build trigger
 ## 2.0.4
 * added corerct build status
 ## 2.0.3
