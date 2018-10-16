@@ -1,5 +1,7 @@
 # CHANGES
 
+## 2.0.7
+* Added corerct wheel file
 ## 2.0.6
 * Updated pycrisprcleanr version to 2.0.1
 
