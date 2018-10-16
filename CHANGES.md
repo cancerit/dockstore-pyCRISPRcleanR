@@ -1,5 +1,8 @@
 # CHANGES
 
+## 2.0.6
+* Updated pycrisprcleanr version to 2.0.1
+
 ## 2.0.5
 * Test build trigger
 ## 2.0.4
