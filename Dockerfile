@@ -2,7 +2,7 @@ FROM  ubuntu:16.04
 MAINTAINER  cgphelp@sanger.ac.uk
 
 LABEL uk.ac.sanger.cgp="Cancer Genome Project, Wellcomei Sanger Institute" \
-      version="2.0.0" \
+      version="2.0.6" \
       description="Tool to perform crisprcleaner analysis"
 
 USER root
@@ -34,7 +34,7 @@ RUN apt-get update && \
 RUN R -e 'source("http://bioconductor.org/biocLite.R"); biocLite("DNAcopy", ask=FALSE, lib="'"${R_LIBS_USER}"'")'
 
 # install crisprcleanr
-RUN pip3 --no-cache-dir install https://github.com/cancerit/pyCRISPRcleanR/releases/download/2.0.0/pyCRISPRcleanR-2.0.0-py3-none-any.whl
+RUN pip3 --no-cache-dir install https://github.com/cancerit/pyCRISPRcleanR/releases/download/2.0.1/pyCRISPRcleanR-2.0.1-py3-none-any.whl
 
 ### security upgrades and cleanup
 RUN apt-get -yq update && \
