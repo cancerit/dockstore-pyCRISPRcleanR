@@ -1,5 +1,8 @@
 # CHANGES
 
+## 2.0.8
+* Added additional R packages and correct docker version of pycrisprcleanr
+
 ## 2.0.7
 * Added corerct wheel file
 ## 2.0.6
