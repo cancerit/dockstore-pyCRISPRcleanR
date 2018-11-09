@@ -1,5 +1,8 @@
 # CHANGES
 
+## 2.0.10
+* Updated cwl and default json
+* Added pyCRISPRcleanR-2.0.5
 ## 2.0.9
 * Updated pyCRISPRcleanR version to 2.0.3
 * modified cwl to output single zip file
