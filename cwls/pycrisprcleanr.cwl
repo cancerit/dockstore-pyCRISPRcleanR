@@ -29,7 +29,7 @@ dct:creator:
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/wtsicgp/dockstore-pycrisprcleanr:2.0.8"
+    dockerPull: "quay.io/wtsicgp/dockstore-pycrisprcleanr:2.0.10"
 
 hints:
   - class: ResourceRequirement
@@ -150,15 +150,10 @@ inputs:
       position: 13
 
 outputs:
-  output_file:
+  output_results:  
     type: File
     outputBinding:
       glob: $(inputs.outdir)/results.gz.bz2
-
-  output_log:
-    type: File
-    outputBinding:
-      glob: "*.log"
 
 baseCommand: ["pyCRISPRcleanR"]
 
