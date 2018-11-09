@@ -23,5 +23,5 @@
 "run_mageck": true,
 "run_bagel": true,
 "numiter": 10,
-"outdir":"analysis_results"
+"outdir":"pyCrispr_output"
 }

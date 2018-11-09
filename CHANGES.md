@@ -1,13 +1,14 @@
 # CHANGES
 
+## 2.0.9
+* Updated pyCRISPRcleanR version to 2.0.3
+* modified cwl to output single zip file
 ## 2.0.8
 * Added additional R packages and correct docker version of pycrisprcleanr
-
 ## 2.0.7
 * Added corerct wheel file
 ## 2.0.6
 * Updated pycrisprcleanr version to 2.0.1
-
 ## 2.0.5
 * Test build trigger
 ## 2.0.4
