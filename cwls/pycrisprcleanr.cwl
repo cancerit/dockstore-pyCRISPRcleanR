@@ -150,10 +150,10 @@ inputs:
       position: 13
 
 outputs:
-  output_data:
-    type: Directory
+  output_file:
+    type: File
     outputBinding:
-      glob: $(inputs.outdir)
+      glob: $(inputs.outdir)/results.gz.bz2
 
   output_log:
     type: File
