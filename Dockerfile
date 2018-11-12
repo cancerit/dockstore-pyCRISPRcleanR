@@ -2,7 +2,7 @@ FROM  ubuntu:16.04
 MAINTAINER  cgphelp@sanger.ac.uk
 
 LABEL uk.ac.sanger.cgp="Cancer Genome Project, Wellcomei Sanger Institute" \
-      version="2.0.11" \
+      version="2.0.12" \
       description="Tool to perform crisprcleaner analysis"
 
 
