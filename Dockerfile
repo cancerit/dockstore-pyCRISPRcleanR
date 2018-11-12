@@ -2,14 +2,14 @@ FROM  ubuntu:16.04
 MAINTAINER  cgphelp@sanger.ac.uk
 
 LABEL uk.ac.sanger.cgp="Cancer Genome Project, Wellcomei Sanger Institute" \
-      version="2.0.10" \
+      version="2.0.11" \
       description="Tool to perform crisprcleaner analysis"
 
 
 
 USER root
 
-ENV CRISPR_VER 2.0.5
+ENV CRISPR_VER 2.0.6
 ENV OPT /opt/wtsi-cgp
 ENV PATH $OPT/bin:$PATH
 ENV LD_LIBRARY_PATH $OPT/lib
