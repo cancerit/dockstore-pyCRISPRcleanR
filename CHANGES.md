@@ -1,5 +1,7 @@
 # CHANGES
 
+## 2.0.11
+* Added pyCRISPRcleanR-2.0.6
 ## 2.0.10
 * Updated cwl and default json
 * Added pyCRISPRcleanR-2.0.5
