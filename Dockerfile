@@ -2,7 +2,7 @@ FROM  ubuntu:16.04
 MAINTAINER  cgphelp@sanger.ac.uk
 
 LABEL uk.ac.sanger.cgp="Cancer Genome Project, Wellcomei Sanger Institute" \
-      version="2.0.12" \
+      version="2.0.13" \
       description="Tool to perform crisprcleaner analysis"
 
 
@@ -32,9 +32,15 @@ RUN apt-get update && \
     python3  \
     python3-dev \
     python3-setuptools \
-    python3-pip
+    python3-pip \
+    python3-wheel
 
 RUN R -e 'source("http://bioconductor.org/biocLite.R"); biocLite(c("DNAcopy","pROC","PRROC","graphics"), ask=FALSE, lib="'"${R_LIBS_USER}"'")'
+
+COPY requirements.txt $OPT/requirements.txt
+RUN pip3 --no-cache-dir install -r $OPT/requirements.txt
+# need to build seprately for mageck without --no-cache-dir option
+RUN pip3 install https://sourceforge.net/projects/mageck/files/0.5/mageck-0.5.7.tar.gz
 
 # install crisprcleanr
 RUN pip3 --no-cache-dir install https://github.com/cancerit/pyCRISPRcleanR/releases/download/${CRISPR_VER}/pyCRISPRcleanR-${CRISPR_VER}-py3-none-any.whl
