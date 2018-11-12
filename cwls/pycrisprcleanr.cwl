@@ -150,10 +150,16 @@ inputs:
       position: 13
 
 outputs:
+  
   output_results:  
     type: File
     outputBinding:
-      glob: $(inputs.outdir)/results.gz.bz2
+      glob: $(inputs.outdir)/results.tar.bz2
+
+  output_log:
+    type: File
+    outputBinding:
+      glob: "*.log"
 
 baseCommand: ["pyCRISPRcleanR"]
 
