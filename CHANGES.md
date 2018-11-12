@@ -1,5 +1,7 @@
 # CHANGES
 
+## 2.0.14
+* removed mageck from requirements.txt file
 ## 2.0.13
 * added requirements.txt and separate installation step for mageck
 ## 2.0.12
