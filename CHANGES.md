@@ -1,5 +1,7 @@
 # CHANGES
 
+## 2.0.12
+* added correct version in cwl
 ## 2.0.11
 * Added pyCRISPRcleanR-2.0.6
 ## 2.0.10
