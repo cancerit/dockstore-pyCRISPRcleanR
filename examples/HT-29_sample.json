@@ -10,8 +10,8 @@
 },
 
 "gene_signatures":{
-  "class": "Directory", 
-  "path": "../examples/data/signatures/"
+  "class": "File", 
+  "path": "../examples/data/signatures.tar.gz"
 },
 
 "minreads": 30,
