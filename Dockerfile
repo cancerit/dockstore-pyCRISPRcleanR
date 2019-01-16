@@ -9,7 +9,7 @@ LABEL uk.ac.sanger.cgp="Cancer Genome Project, Wellcomei Sanger Institute" \
 
 USER root
 
-ENV CRISPR_VER 2.0.6
+ENV CRISPR_VER 2.0.8
 ENV OPT /opt/wtsi-cgp
 ENV PATH $OPT/bin:$PATH
 ENV LD_LIBRARY_PATH $OPT/lib

@@ -29,7 +29,7 @@ dct:creator:
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/wtsicgp/dockstore-pycrisprcleanr:2.0.14"
+    dockerPull: "quay.io/wtsicgp/dockstore-pycrisprcleanr:2.0.15"
 
 hints:
   - class: ResourceRequirement
@@ -142,8 +142,8 @@ inputs:
       position: 12
   
   gene_signatures:
-    type: Directory 
-    doc: "Directory path containing .txt files for signature genes"
+    type: File 
+    doc: "tar file containing .txt files for signature genes"
     inputBinding:
       prefix: -gs
       separate: true
