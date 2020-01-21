@@ -1,5 +1,6 @@
 # CHANGES
-
+## 2.0.16
+*  Added version 2.1.0
 ## 2.0.15
 *  Added version 2.0.8, updated cwl and example json for signature paramter
 ## 2.0.14
