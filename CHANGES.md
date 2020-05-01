@@ -1,4 +1,9 @@
 # CHANGES
+
+## 2.0.17
+
+*  Start to use pyCRISPRcleanR 2.1.1, which fixed a minor bug.
+
 ## 2.0.16
 *  Added version 2.1.0
 ## 2.0.15
