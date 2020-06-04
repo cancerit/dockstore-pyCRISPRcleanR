@@ -1,5 +1,9 @@
 # CHANGES
 
+## 2.0.18
+
+*  Updated CWL file metadata schema IRI
+
 ## 2.0.17
 
 *  Start to use pyCRISPRcleanR 2.1.1, which fixed a minor bug.
